@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>ElhyTravel | Agencia de Viajes Premium - Visas, Reservas y Seguros | Asesoría Profesional</title>
+  <meta name="description" content="ElhyTravel: Viaja con tranquilidad. Asesoría experta en Visa Schengen, USA, Canadá, México. Reservas de hoteles y vuelos, seguros de viaje y pasaportes. Primera asesoría GRATIS. +5000 clientes satisfechos.">
+  <meta name="keywords" content="agencia de viajes, visa schengen, visa estados unidos, visa canadá, visa méxico, reservas hoteles, vuelos baratos, seguro de viaje, pasaporte, asesoría de visas Ecuador, ElhyTravel, viajes internacionales">
+  <meta name="author" content="ElhyTravel">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://esancheza-eng.github.io/elhytravel/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://esancheza-eng.github.io/elhytravel/">
+  <meta property="og:title" content="ElhyTravel | Tu Próxima Aventura Comienza Aquí">
+  <meta property="og:description" content="Viaja con tranquilidad. Nosotros nos encargamos de todo. Visas, reservas, seguros y más. Asesoría GRATIS.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=630&fit=crop">
+  <meta property="og:locale" content="es_EC">
+  <meta property="og:site_name" content="ElhyTravel">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ElhyTravel | Agencia de Viajes Premium">
+  <meta name="twitter:description" content="Asesoría profesional en visas y viajes. Primera consulta gratis.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&h=630&fit=crop">
+  
+  <!-- Schema.org TravelAgency -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "ElhyTravel",
+    "description": "Agencia de viajes profesional especializada en visas, reservas de hoteles y vuelos, seguros de viaje y asesoría integral para viajeros.",
+    "url": "https://esancheza-eng.github.io/elhytravel/",
+    "logo": "https://esancheza-eng.github.io/elhytravel/assets/logo.png",
+    "telephone": "+593989938910",
+    "email": "contacto@elhytravel.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "EC",
+      "addressLocality": "Guayaquil",
+      "addressRegion": "Guayas"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-2.1709",
+      "longitude": "-79.9224"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-13:00",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/elhytravel",
+      "https://www.instagram.com/elhytravel",
+      "https://www.tiktok.com/@elhytravel",
+      "https://www.youtube.com/@elhytravel"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1240"
+    }
+  }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="plane-loader">
+        <i class="fas fa-plane"></i>
+      </div>
+      <p>Preparando tu aventura...</p>
+    </div>
+  </div>
+
+  <!-- Floating Particles Background -->
+  <div id="particles-js"></div>
+  
+  <!-- Animated Planes & Clouds -->
+  <div class="sky-elements">
+    <div class="plane plane-1"><i class="fas fa-plane"></i></div>
+    <div class="plane plane-2"><i class="fas fa-plane"></i></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <span class="logo-icon"><i class="fas fa-globe-americas"></i></span>
+        <span class="logo-text">Elhy<span class="text-gold">Travel</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#visas">Visas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservas">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#seguros">Seguros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item ms-lg-3">
+            <a href="#asesoria" class="btn btn-gold btn-sm px-4">Solicitar Asesoría</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+          <div class="hero-badge mb-3">
+            <i class="fas fa-star text-gold"></i> +5000 viajeros felices
+          </div>
+          <h1 class="hero-title">
+            TU PRÓXIMA AVENTURA<br>
+            <span class="text-gold">COMIENZA AQUÍ</span>
+          </h1>
+          <p class="hero-subtitle">
+            Viaja con tranquilidad. Nosotros nos encargamos de todo.<br>
+            Visas • Hoteles • Vuelos • Seguros • Pasaportes
+          </p>
+          <div class="hero-buttons d-flex flex-wrap gap-3 mt-4">
+            <a href="#asesoria" class="btn btn-gold btn-lg px-5">
+              <i class="fas fa-gift me-2"></i>Asesoría GRATIS
+            </a>
+            <a href="https://wa.me/593989938910?text=Hola%20ElhyTravel%2C%20quiero%20asesor%C3%ADa%20gratis%20para%20mi%20viaje" 
+               class="btn btn-outline-light btn-lg px-5" target="_blank">
+              <i class="fab fa-whatsapp me-2"></i>Hablar por WhatsApp
+            </a>
+          </div>
+          <div class="hero-trust mt-5 d-flex flex-wrap gap-4">
+            <div class="trust-item">
+              <i class="fas fa-shield-alt text-gold"></i>
+              <span>100% Seguro</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-clock text-gold"></i>
+              <span>Respuesta 24h</span>
+            </div>
+            <div class="trust-item">
+              <i class="fas fa-award text-gold"></i>
+              <span>Expertos Certificados</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1000">
+          <div class="hero-images">
+            <div class="hero-img main-img">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&h=400&fit=crop" alt="Pareja viajando">
+            </div>
+            <div class="hero-img floating-img img-1">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=200&h=150&fit=crop" alt="Torre Eiffel">
+            </div>
+            <div class="hero-img floating-img img-2">
+              <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=200&h=150&fit=crop" alt="Big Ben">
+            </div>
+            <div class="hero-img floating-img img-3">
+              <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=200&h=150&fit=crop" alt="Estatua de la Libertad">
+            </div>
+            <div class="hero-plane">
+              <i class="fas fa-plane-departure"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#servicios"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-card">
+            <div class="stat-number" data-count="5000">0</div>
+            <div class="stat-label">Clientes Atendidos</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-card">
+            <div class="stat-number" data-count="3200">0</div>
+            <div class="stat-label">Visas Aprobadas</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-card">
+            <div class="stat-number" data-count="7800">0</div>
+            <div class="stat-label">Reservas Realizadas</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="400">
+          <div class="stat-card">
+            <div class="stat-number" data-count="80">0</div>
+            <div class="stat-label">Países</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicios" class="services-section py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-badge">Nuestros Servicios</span>
+        <h2 class="section-title">Soluciones Integrales para tu Viaje</h2>
+        <p class="section-subtitle">Todo lo que necesitas para viajar con confianza y sin preocupaciones</p>
+      </div>
+      
+      <div class="row g-4" id="servicesGrid">
+        <!-- Visa Schengen -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card" data-service="Visa Schengen">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&h=250&fit=crop" alt="Visa Schengen">
+              <div class="service-icon"><i class="fas fa-passport"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Visa Schengen</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Asesoría completa</li>
+                <li><i class="fas fa-check"></i> Revisión documental</li>
+                <li><i class="fas fa-check"></i> Agendamiento</li>
+                <li><i class="fas fa-check"></i> Seguimiento personalizado</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Visa Schengen">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Visa USA -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card" data-service="Visa Estados Unidos">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=400&h=250&fit=crop" alt="Visa USA">
+              <div class="service-icon"><i class="fas fa-flag-usa"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Visa Estados Unidos</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Asesoría DS-160</li>
+                <li><i class="fas fa-check"></i> Preparación entrevista</li>
+                <li><i class="fas fa-check"></i> Renovaciones</li>
+                <li><i class="fas fa-check"></i> Primera vez</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Visa Estados Unidos">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Visa Canadá -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card" data-service="Visa Canadá">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=400&h=250&fit=crop" alt="Visa Canadá">
+              <div class="service-icon"><i class="fas fa-maple-leaf"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Visa Canadá</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Residencia</li>
+                <li><i class="fas fa-check"></i> Turismo</li>
+                <li><i class="fas fa-check"></i> Negocios</li>
+                <li><i class="fas fa-check"></i> Estudios</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Visa Canadá">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Visa México -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card" data-service="Visa México">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400&h=250&fit=crop" alt="Visa México">
+              <div class="service-icon"><i class="fas fa-umbrella-beach"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Visa México</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Turismo</li>
+                <li><i class="fas fa-check"></i> Trabajo</li>
+                <li><i class="fas fa-check"></i> Negocios</li>
+                <li><i class="fas fa-check"></i> Asesoría completa</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Visa México">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hoteles -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card" data-service="Reserva de Hoteles">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=250&fit=crop" alt="Hoteles">
+              <div class="service-icon"><i class="fas fa-hotel"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Reserva de Hoteles</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> +500.000 hoteles</li>
+                <li><i class="fas fa-check"></i> Mejores precios</li>
+                <li><i class="fas fa-check"></i> Cancelación flexible</li>
+                <li><i class="fas fa-check"></i> Confirmación inmediata</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Reserva de Hoteles">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Vuelos -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card" data-service="Reserva de Vuelos">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=250&fit=crop" alt="Vuelos">
+              <div class="service-icon"><i class="fas fa-plane"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Reserva de Vuelos</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Nacionales</li>
+                <li><i class="fas fa-check"></i> Internacionales</li>
+                <li><i class="fas fa-check"></i> Promociones exclusivas</li>
+                <li><i class="fas fa-check"></i> Mejores tarifas</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Reserva de Vuelos">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Seguro -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card" data-service="Seguro de Viaje">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" alt="Seguro">
+              <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Seguro de Viaje</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Cobertura médica</li>
+                <li><i class="fas fa-check"></i> Pérdida de equipaje</li>
+                <li><i class="fas fa-check"></i> Accidentes</li>
+                <li><i class="fas fa-check"></i> Emergencias 24/7</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Seguro de Viaje">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Pasaporte -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card" data-service="Pasaporte">
+            <div class="service-img">
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop" alt="Pasaporte">
+              <div class="service-icon"><i class="fas fa-id-card"></i></div>
+            </div>
+            <div class="service-body">
+              <h3>Pasaporte</h3>
+              <ul class="service-features">
+                <li><i class="fas fa-check"></i> Asesoría completa</li>
+                <li><i class="fas fa-check"></i> Requisitos</li>
+                <li><i class="fas fa-check"></i> Renovación</li>
+                <li><i class="fas fa-check"></i> Primera emisión</li>
+              </ul>
+              <div class="service-actions">
+                <button class="btn btn-outline-gold btn-sm add-to-cart" data-service="Pasaporte">
+                  <i class="fas fa-cart-plus"></i> Agregar
+                </button>
+                <a href="#asesoria" class="btn btn-gold btn-sm">Solicitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Advisory CTA -->
+  <section id="asesoria" class="cta-section py-5">
+    <div class="container">
+      <div class="cta-box text-center" data-aos="zoom-in">
+        <div class="cta-icon mb-3">
+          <i class="fas fa-gift"></i>
+        </div>
+        <h2 class="cta-title">TU PRIMERA ASESORÍA ES <span class="text-gold">GRATIS</span></h2>
+        <p class="cta-text">Habla con un experto y recibe un plan personalizado para tu próximo viaje. Sin compromiso.</p>
+        <a href="#formulario" class="btn btn-gold btn-lg px-5 mt-3">
+          <i class="fas fa-rocket me-2"></i>Solicítala Ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smart Form -->
+  <section id="formulario" class="form-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="form-card">
+            <div class="form-header text-center mb-4">
+              <h2>Formulario Inteligente de Solicitud</h2>
+              <p>Completa los datos y te contactamos por WhatsApp al instante</p>
+            </div>
+            <form id="smartForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Nombre *</label>
+                  <input type="text" class="form-control" id="nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Apellido *</label>
+                  <input type="text" class="form-control" id="apellido" required placeholder="Tu apellido">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Correo Electrónico *</label>
+                  <input type="email" class="form-control" id="correo" required placeholder="tu@email.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">WhatsApp *</label>
+                  <input type="tel" class="form-control" id="whatsapp" required placeholder="0987654321">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="ciudad" placeholder="Guayaquil">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">País</label>
+                  <input type="text" class="form-control" id="pais" value="Ecuador" placeholder="Ecuador">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Servicio de Interés *</label>
+                  <select class="form-select" id="servicio" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Visa Schengen">Visa Schengen</option>
+                    <option value="Visa Estados Unidos">Visa Estados Unidos</option>
+                    <option value="Visa Canadá">Visa Canadá</option>
+                    <option value="Visa México">Visa México</option>
+                    <option value="Reserva de Hoteles">Reserva de Hoteles</option>
+                    <option value="Reserva de Vuelos">Reserva de Vuelos</option>
+                    <option value="Seguro de Viaje">Seguro de Viaje</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="Paquete Completo">Paquete Completo</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Fecha Estimada del Viaje</label>
+                  <input type="date" class="form-control" id="fecha">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Destino Principal</label>
+                  <input type="text" class="form-control" id="destino" placeholder="Ej: París, Nueva York...">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Número de Viajeros</label>
+                  <input type="number" class="form-control" id="viajeros" min="1" value="1">
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Mensaje Adicional</label>
+                  <textarea class="form-control" id="mensaje" rows="3" placeholder="Cuéntanos más sobre tu viaje..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-gold btn-lg px-5">
+                    <i class="fab fa-whatsapp me-2"></i>Enviar Solicitud por WhatsApp
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonios" class="testimonials-section py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-badge">Testimonios</span>
+        <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+      </div>
+      
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="testimonial-text">"Conseguí mi Visa Schengen en tiempo récord. El equipo de ElhyTravel me guió en cada paso. ¡Altamente recomendados!"</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María" class="author-img">
+                    <div>
+                      <h5>María Fernanda López</h5>
+                      <span>Viajó a España • Visa Schengen</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="testimonial-text">"Mi entrevista para la visa de USA salió perfecta gracias a la preparación. Profesionales de verdad. Ya estoy en Miami!"</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos" class="author-img">
+                    <div>
+                      <h5>Carlos Andrés Vera</h5>
+                      <span>Viajó a USA • Visa B1/B2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="stars">★★★★★</div>
+                  <p class="testimonial-text">"Reservaron todo mi viaje a Canadá: vuelo, hotel y seguro. Todo impecable y al mejor precio. ¡Gracias ElhyTravel!"</p>
+                  <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana" class="author-img">
+                    <div>
+                      <h5>Ana Lucía Mendoza</h5>
+                      <span>Viajó a Canadá • Paquete Completo</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section id="nosotros" class="about-section py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-card mission-card">
+            <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>Nuestra Misión</h3>
+            <p>Brindar asesoría profesional para que cada cliente viaje con seguridad, confianza y tranquilidad, ofreciendo soluciones integrales en visas, reservas y servicios turísticos.</p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="about-card vision-card">
+            <div class="about-icon"><i class="fas fa-eye"></i></div>
+            <h3>Nuestra Visión</h3>
+            <p>Ser una de las agencias de viajes líderes en Latinoamérica, reconocida por la excelencia en el servicio, innovación tecnológica y atención personalizada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="galeria" class="gallery-section py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-badge">Galería</span>
+        <h2 class="section-title">Inspírate para tu próximo destino</h2>
+      </div>
+      <div class="row g-3" data-aos="fade-up">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=300&fit=crop" alt="Avión">
+            <div class="gallery-overlay"><span>Aviones</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1542296332-2e4473faf563?w=400&h=300&fit=crop" alt="Aeropuerto">
+            <div class="gallery-overlay"><span>Aeropuertos</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400&h=300&fit=crop" alt="Europa">
+            <div class="gallery-overlay"><span>Europa</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=400&h=300&fit=crop" alt="USA">
+            <div class="gallery-overlay"><span>Estados Unidos</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=400&h=300&fit=crop" alt="Canadá">
+            <div class="gallery-overlay"><span>Canadá</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1518638150340-f706e86654de?w=400&h=300&fit=crop" alt="México">
+            <div class="gallery-overlay"><span>México</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop" alt="Hoteles">
+            <div class="gallery-overlay"><span>Hoteles</span></div>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=300&fit=crop" alt="Playas">
+            <div class="gallery-overlay"><span>Playas</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-section py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-badge">FAQ</span>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion" data-aos="fade-up">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  ¿Cuánto tarda la Visa Schengen?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  El proceso completo de Visa Schengen suele tomar entre 15 a 45 días hábiles, dependiendo del consulado y la época del año. Nosotros te acompañamos en todo el proceso para maximizar las probabilidades de aprobación.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  ¿La primera asesoría es realmente gratis?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  ¡Sí! Tu primera consulta es 100% gratuita y sin compromiso. Analizamos tu caso, te damos un plan de acción y respondemos todas tus dudas.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  ¿Qué documentos necesito para la Visa de USA?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Principalmente: pasaporte vigente, formulario DS-160, foto digital, comprobante de pago de MRV, y documentación que demuestre lazos con el país (trabajo, propiedades, familia, etc.). Te preparamos un checklist personalizado.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  ¿Pueden reservar hoteles y vuelos al mejor precio?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Absolutamente. Tenemos acceso a tarifas preferenciales y más de 500.000 hoteles. Comparamos opciones y te presentamos las mejores según tu presupuesto y preferencias.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                  ¿Ofrecen seguros de viaje?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sí. Trabajamos con las mejores aseguradoras. Cobertura médica internacional, pérdida de equipaje, cancelación de viaje, repatriación y asistencia 24/7.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                  ¿Cuál es el horario de atención?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Lunes a Viernes de 9:00 a 18:00. Sábados de 9:00 a 13:00. WhatsApp 24/7 para emergencias y consultas urgentes.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contacto" class="footer-section">
+    <div class="container">
+      <div class="row g-4 py-5">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <a class="navbar-brand d-flex align-items-center mb-3" href="#inicio">
+              <span class="logo-icon"><i class="fas fa-globe-americas"></i></span>
+              <span class="logo-text">Elhy<span class="text-gold">Travel</span></span>
+            </a>
+            <p>Tu partner de confianza para viajar por el mundo con seguridad y tranquilidad. Expertos en visas y experiencias inolvidables.</p>
+            <div class="social-links mt-3">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Servicios</h5>
+          <ul class="footer-links">
+            <li><a href="#servicios">Visa Schengen</a></li>
+            <li><a href="#servicios">Visa USA</a></li>
+            <li><a href="#servicios">Visa Canadá</a></li>
+            <li><a href="#servicios">Hoteles & Vuelos</a></li>
+            <li><a href="#servicios">Seguros</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contacto</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/593989938910" target="_blank">0989938910</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:contacto@elhytravel.com">contacto@elhytravel.com</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Guayaquil, Ecuador
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              Lun-Vie 9:00-18:00 | Sáb 9:00-13:00
+            </li>
+          </ul>
+          <div class="mt-3">
+            <a href="https://wa.me/593989938910?text=Hola%20ElhyTravel%2C%20quiero%20información" 
+               class="btn btn-gold btn-sm w-100" target="_blank">
+              <i class="fab fa-whatsapp me-1"></i> WhatsApp Directo
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center py-3">
+        <p class="mb-0">&copy; 2026 ElhyTravel. Todos los derechos reservados. | Diseñado con ❤️ para viajeros ambiciosos</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Cart -->
+  <div id="floatingCart" class="floating-cart">
+    <div class="cart-header">
+      <h5><i class="fas fa-shopping-cart"></i> Carrito de Servicios</h5>
+      <button id="closeCart" class="btn-close-cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-body" id="cartItems">
+      <p class="empty-cart">No hay servicios seleccionados</p>
+    </div>
+    <div class="cart-footer">
+      <button id="finalizeRequest" class="btn btn-gold w-100" disabled>
+        <i class="fab fa-whatsapp me-2"></i>Finalizar Solicitud
+      </button>
+    </div>
+  </div>
+  <button id="cartToggle" class="cart-toggle">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/593989938910?text=Hola%20ElhyTravel%2C%20quiero%20asesor%C3%ADa" 
+     class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ElhyBot Chatbot -->
+  <div id="chatbot" class="chatbot">
+    <div class="chatbot-header">
+      <div class="bot-info">
+        <div class="bot-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <h6>ElhyBot</h6>
+          <span class="status">En línea</span>
+        </div>
+      </div>
+      <button id="closeChat" class="btn-close-chat"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-body" id="chatMessages">
+      <div class="bot-message">
+        ¡Hola! 👋 Soy ElhyBot, tu asistente virtual de ElhyTravel.<br>
+        ¿En qué puedo ayudarte hoy?<br><br>
+        <strong>Puedo responder sobre:</strong><br>
+        • Requisitos Visa Schengen<br>
+        • Visa Estados Unidos<br>
+        • Visa Canadá / México<br>
+        • Reservas y Seguros<br>
+        • Pasaporte<br>
+        • Costos y tiempos
+      </div>
+    </div>
+    <div class="chatbot-suggestions" id="chatSuggestions">
+      <button class="suggestion-btn" data-q="requisitos schengen">Visa Schengen</button>
+      <button class="suggestion-btn" data-q="visa usa">Visa USA</button>
+      <button class="suggestion-btn" data-q="visa canada">Visa Canadá</button>
+      <button class="suggestion-btn" data-q="seguro">Seguros</button>
+      <button class="suggestion-btn" data-q="horarios">Horarios</button>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatInput" placeholder="Escribe tu pregunta...">
+      <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <button id="chatToggle" class="chat-toggle">
+    <i class="fas fa-comments"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
