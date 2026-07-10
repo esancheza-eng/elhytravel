@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cart.length === 0) return;
     
     const servicesList = cart.map(s => `• ${s}`).join('%0A');
-    const message = `Hola ElhyTravel.%0AEstoy interesado en los siguientes servicios:%0A${servicesList}%0A%0ANombre:%0ACorreo:%0ATeléfono:%0A%0AGracias.`;
+    const message = `Hola ElhyTravel.%0AEstoy interesado en los siguientes servicios:%0A${servicesList}%0A%0AGracias.`;
     
     window.open(`https://wa.me/593989938910?text=${message}`, '_blank');
   });
@@ -233,102 +233,113 @@ document.addEventListener('DOMContentLoaded', () => {
       keywords: ['usa', 'estados unidos', 'eeuu', 'america', 'ds-160', 'b1', 'b2', 'visa americana'],
       answer: `🇺🇸 <strong>Visa Estados Unidos (B1/B2)</strong><br><br>
       <strong>Proceso:</strong><br>
-      1. Completar DS-160<br>
-      2. Pagar MRV (~$185 USD)<br>
-      3. Agendar cita en embajada<br>
-      4. Preparación de entrevista (¡clave!)<br>
-      5. Documentos de lazos con Ecuador<br><br>
+      1. Completar DS-160
+      2. Pagar MRV (~$185 USD)
+      3. Agendar cita en embajada
+      4. Preparación de entrevista (¡clave!)
+      5. Documentos de lazos con Ecuador
+
       <strong>Documentos clave:</strong><br>
-      • Pasaporte + copias<br>
-      • Confirmación DS-160<br>
-      • Comprobante pago<br>
-      • Carta laboral, extractos, propiedades, etc.<br><br>
-      Te preparamos la entrevista para maximizar aprobación.<br>
+      • Pasaporte + copias
+      • Confirmación DS-160
+      • Comprobante pago
+      • Carta laboral, extractos, propiedades, etc.
+
+      Te preparamos la entrevista para maximizar aprobación.
       ¿Agenda tu asesoría gratis?`
     },
     'canada': {
       keywords: ['canadá', 'canada', 'visa canadiense', 'estudio', 'trabajo canada'],
       answer: `🇨🇦 <strong>Visa Canadá</strong><br><br>
-      Ofrecemos asesoría para:<br>
-      • Turismo (eTA / Visa de visitante)<br>
-      • Estudios (Study Permit)<br>
-      • Trabajo (Work Permit)<br>
-      • Residencia permanente (Express Entry, PNP)<br><br>
-      Requisitos varían según el tipo. Generalmente:<br>
-      • Pasaporte<br>
-      • Prueba de fondos<br>
-      • Carta de invitación (si aplica)<br>
-      • Exámenes médicos (algunos casos)<br>
-      • Biométricos<br><br>
+      Ofrecemos asesoría para:
+      • Turismo (eTA / Visa de visitante)
+      • Estudios (Study Permit)
+      • Trabajo (Work Permit)
+      • Residencia permanente (Express Entry, PNP)
+
+      Requisitos varían según el tipo. Generalmente:
+      • Pasaporte
+      • Prueba de fondos
+      • Carta de invitación (si aplica)
+      • Exámenes médicos (algunos casos)
+      • Biométricos
+
       ¿Qué tipo de visa a Canadá necesitas?`
     },
     'mexico': {
       keywords: ['méxico', 'mexico', 'visa mexicana'],
       answer: `🇲🇽 <strong>Visa México</strong><br><br>
-      Para ecuatorianos la mayoría de estancias cortas de turismo no requieren visa (hasta 180 días), pero sí se recomienda:<br>
-      • Pasaporte vigente<br>
-      • Boleto de regreso<br>
-      • Prueba de fondos<br>
-      • Reserva de hotel<br><br>
+      Para ecuatorianos la mayoría de estancias cortas de turismo no requieren visa (hasta 180 días), pero sí se recomienda:
+      • Pasaporte vigente
+      • Boleto de regreso
+      • Prueba de fondos
+      • Reserva de hotel
+
       Para trabajo, negocios o estancias largas sí se requiere visa. Te asesoramos en todos los casos.`
     },
     'seguro': {
       keywords: ['seguro', 'seguros', 'cobertura', 'médico', 'equipaje'],
       answer: `🛡️ <strong>Seguro de Viaje</strong><br><br>
-      Coberturas que ofrecemos:<br>
-      • Asistencia médica internacional<br>
-      • Gastos por enfermedad o accidente<br>
-      • Pérdida o retraso de equipaje<br>
-      • Cancelación o interrupción de viaje<br>
-      • Repatriación<br>
-      • Asistencia 24/7 en español<br><br>
-      Precios desde $25-30 por semana (depende destino y edad).<br>
+      Coberturas que ofrecemos:
+      • Asistencia médica internacional
+      • Gastos por enfermedad o accidente
+      • Pérdida o retraso de equipaje
+      • Cancelación o interrupción de viaje
+      • Repatriación
+      • Asistencia 24/7 en español
+
+      Precios desde $25-30 por semana (depende destino y edad).
       ¡Es obligatorio para Schengen y muy recomendado en general!`
     },
     'pasaporte': {
       keywords: ['pasaporte', 'pasaportes', 'renovar', 'primera vez'],
       answer: `📘 <strong>Pasaporte Ecuatoriano</strong><br><br>
-      Te ayudamos con:<br>
-      • Primera emisión<br>
-      • Renovación<br>
-      • Requisitos actualizados<br>
-      • Agendamiento y seguimiento<br><br>
-      Documentos habituales: cédula, certificado de votación, fotos, pago de tasas.<br>
+      Te ayudamos con:
+      • Primera emisión
+      • Renovación
+      • Requisitos actualizados
+      • Agendamiento y seguimiento
+
+      Documentos habituales: cédula, certificado de votación, fotos, pago de tasas.
       Tiempo: 5-15 días hábiles aproximadamente.`
     },
     'reservas': {
       keywords: ['hotel', 'hoteles', 'vuelo', 'vuelos', 'reserva', 'reservas', 'boleto'],
       answer: `✈️🏨 <strong>Reservas de Vuelos y Hoteles</strong><br><br>
-      • Acceso a +500.000 hoteles<br>
-      • Tarifas preferenciales y promociones<br>
-      • Cancelación flexible en muchos casos<br>
-      • Vuelos nacionales e internacionales<br>
-      • Combinamos vuelo + hotel + seguro para mejor precio<br><br>
+      • Acceso a +500.000 hoteles
+      • Tarifas preferenciales y promociones
+      • Cancelación flexible en muchos casos
+      • Vuelos nacionales e internacionales
+      • Combinamos vuelo + hotel + seguro para mejor precio
+
       Dinos destino y fechas y te armamos las mejores opciones.`
     },
     'horarios': {
       keywords: ['horario', 'horarios', 'atención', 'cuando', 'abierto'],
       answer: `🕐 <strong>Horarios de Atención</strong><br><br>
-      Lunes a Viernes: 09:00 - 18:00<br>
-      Sábados: 09:00 - 13:00<br>
-      WhatsApp: 24/7 para consultas y emergencias<br><br>
+      Lunes a Viernes: 09:00 - 18:00
+      Sábados: 09:00 - 13:00
+      WhatsApp: 24/7 para consultas y emergencias
+
       Número: 0989938910`
     },
     'costos': {
       keywords: ['costo', 'precio', 'cuanto', 'cuánto', 'vale', 'tarifa', 'honorarios'],
       answer: `💰 <strong>Costos e Honorarios</strong><br><br>
-      Nuestros honorarios varían según el servicio y complejidad del caso.<br>
-      La <strong>primera asesoría es 100% GRATIS</strong>.<br><br>
-      En la consulta te damos un presupuesto claro y transparente sin sorpresas.<br>
+      Nuestros honorarios varían según el servicio y complejidad del caso.
+      La <strong>primera asesoría es 100% GRATIS</strong>.
+
+      En la consulta te damos un presupuesto claro y transparente sin sorpresas.
       ¿Quieres agendar tu asesoría gratuita ahora?`
     },
     'tiempo': {
       keywords: ['tiempo', 'cuanto demora', 'demora', 'tarda', 'respuesta'],
       answer: `⏱ <strong>Tiempos de Respuesta y Procesos</strong><br><br>
-      • Respuesta por WhatsApp: menos de 2 horas en horario laboral<br>
-      • Visa Schengen: 15-45 días hábiles<br>
-      • Visa USA: depende de la cita (puede ser semanas/meses)<br>
-      • Reservas de hotel/vuelo: confirmación en minutos/horas<br><br>
+      • Respuesta por WhatsApp: menos de 2 horas en horario laboral
+      • Visa Schengen: 15-45 días hábiles
+      • Visa USA: depende de la cita (puede ser semanas/meses)
+      • Reservas de hotel/vuelo: confirmación en minutos/horas
+
       Siempre te damos un cronograma realista desde el inicio.`
     },
     'default': `Gracias por tu pregunta. 😊<br><br>
